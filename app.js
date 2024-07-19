@@ -4,6 +4,9 @@ const mongoose = require('mongoose');
 const config = require('./config');
 const authRoutes = require('./routes/auth');
 const notesRoutes = require('./routes/notes');
+const cors = require('cors');
+app.use(cors());
+
 
 const app = express();
 app.use(bodyParser.json());
